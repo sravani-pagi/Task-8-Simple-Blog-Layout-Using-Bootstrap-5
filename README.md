@@ -10,22 +10,22 @@ The blog is designed as *Tech Insights Blog*, showcasing articles in a clean, re
 - Bootstrap 5 CDN included for rapid development.  
 - Responsive Navbar with brand name and links.  
 - Blog Cards:
-  - Each card contains an image, title, description, and “Read More” button.  
-  - Cards are arranged using the *Bootstrap Grid System* for responsiveness.  
+  - Each card contains an image, title, description, and “Read More" button.  
+  - Cards are arranged using the Bootstrap Grid System for responsiveness.  
 - Footer Section:
   - Includes social media icons (Facebook, Twitter, Instagram, LinkedIn).  
-  - Uses *Bootstrap Icons CDN*.  
+  - Uses Bootstrap Icons CDN.  
 - Custom Styling:
   - Rounded buttons and card images.  
   - Background color (seashell) for better aesthetics.  
   - Styled header links with hover effects.  
 
 ##  Technologies Used
-- *HTML5*  
-- *CSS*  
-- *Bootstrap 5 (CDN)*  
-- *Bootstrap Icons*  
-- *Masonry.js*
+- HTML5 
+- CSS  
+- Bootstrap 5 (CDN) 
+- Bootstrap Icons
+- Masonry.js
 
 
 ###  Desktop View
@@ -45,3 +45,4 @@ By completing this task,
 * Understand Bootstrap 5 components (navbar, grid, cards, footer).
 * Learn to use Bootstrap utility classes for spacing and colors.
 * Gain experience in creating responsive layouts quickly with Bootstrap.
+
