@@ -1,129 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tech Insights Blog</title>
-<!-- Bootstrap CSS CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-<!-- Bootstrap Icons CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet" />
-<style>
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
-  }
-  .btn-primary {
-    border-radius: 20px;
-  }
-  body {
-  background-color:seashell;
-  font-family: sans-serif;
-  }
-  .card-title {
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: #010912;
-}
-  header {
-  background-color: #0d6efd; /* Primary Blue */
-  color: #ffffff; /* White text for contrast */
-}
-
-
-  header a {
-  color: #ffc107; /* Accent for links */
-}
-
-  header a:hover {
-  color: #198754; /* Secondary accent */
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8: Simple Bootstrap Blog Layout (Pastel Design)</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-  <div class="container">
-    <a class="navbar-brand" href="index.html"><span class="fw-bold fs-3"><b>TechInsights</b></span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto fw-semibold">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Main container -->
-<div class="container my-5">
-  <h1 class="mb-4 text-center"><b>Latest Articles</b></h1>
-  <div class="row g-4">
-
-    <!-- Card 1 -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="Bootstrap 5 Overview" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Getting Started with Bootstrap 5</h5>
-          <p class="card-text flex-grow-1">
-            Discover the powerful features and utilities of Bootstrap 5 to build responsive and beautiful web applications effortlessly.
-          </p>
-          <a href="#" class="btn btn-primary mt-auto">Read More</a>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow custom-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Internship Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Concepts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Interviews</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <!-- Card 2 -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="Responsive Design" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Mastering Responsive Web Design</h5>
-          <p class="card-text flex-grow-1">
-            Learn key principles and techniques to create websites that look great and function perfectly on all devices.
-          </p>
-          <a href="#" class="btn btn-primary mt-auto">Read More</a>
+    <header class="hero-section text-center">
+        <div class="container custom-padding-y">
+            <h1 class="display-5 custom-heading-color">Elevate Your Frontend Career: The Ultimate Bootstrap 5 Toolkit</h1>
+            <p class="lead custom-text-muted">Practical guides, tips, and code snippets curated to fast-track your skills in responsive, mobile-first design.</p>
         </div>
-      </div>
-    </div>
+    </header>
 
-    <!-- Card 3 -->
-    <div class="col-md-4">
-      <div class="card h-100 shadow-sm">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" class="card-img-top" alt="CSS Grid" />
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">CSS Grid: Layout Made Easy</h5>
-          <p class="card-text flex-grow-1">
-            Explore CSS Grid and learn how to structure complex page layouts with simple, declarative CSS rules.
-          </p>
-          <a href="#" class="btn btn-primary mt-auto">Read More</a>
+    <div class="container custom-margin-y">
+        <div class="row g-5">
+            
+            <div class="col-lg-8">
+                <h2 class="mb-4 custom-heading-color custom-border-bottom pb-2">Latest Tutorials</h2>
+
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 custom-card-background rounded-3">
+                            <img src="https://placehold.co/400x180/ADD8E6/ffffff?text=Grid+Layout" class="card-img-top card-img-top-custom" alt="HTML CSS Grid Layout">
+                            <div class="card-body">
+                                <span class="badge custom-badge-1 mb-2">Bootstrap Basics</span>
+                                <h5 class="card-title">Understanding the 12-Column Grid System</h5>
+                                <p class="card-text text-muted small">The foundational concept of Bootstrap: 12 columns, containers, and breakpoints for true responsiveness.</p>
+                                <a href="#" class="btn custom-btn-outline btn-sm">Read More &rarr;</a>
+                            </div>
+                            <div class="card-footer custom-card-footer small">Posted: 2 days ago</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 custom-card-background rounded-3">
+                            <img src="https://placehold.co/400x180/F08080/ffffff?text=Card+Components" class="card-img-top card-img-top-custom" alt="Card Components">
+                            <div class="card-body">
+                                <span class="badge custom-badge-2 mb-2">Components</span>
+                                <h5 class="card-title">Mastering Bootstrap Cards for Content</h5>
+                                <p class="card-text text-muted small">How to use the Card component for flexible and extensible content containers, perfect for a blog feed.</p>
+                                <a href="#" class="btn custom-btn-outline btn-sm">Read More &rarr;</a>
+                            </div>
+                            <div class="card-footer custom-card-footer small">Posted: 1 week ago</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 custom-card-background rounded-3">
+                            <img src="https://placehold.co/400x180/90EE90/ffffff?text=Utility+Classes" class="card-img-top card-img-top-custom" alt="Utility Classes">
+                            <div class="card-body">
+                                <span class="badge custom-badge-3 mb-2">CSS Utility</span>
+                                <h5 class="card-title">Deep Dive into Bootstrap Utility Classes</h5>
+                                <p class="card-text text-muted small">Using classes like m-3, p-2, and text-center for *rapid prototyping* without writing custom CSS.</p>
+                                <a href="#" class="btn custom-btn-outline btn-sm">Read More &rarr;</a>
+                            </div>
+                            <div class="card-footer custom-card-footer small">Posted: 3 weeks ago</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 custom-card-background rounded-3">
+                            <img src="https://placehold.co/400x180/FFD700/ffffff?text=Containers" class="card-img-top card-img-top-custom" alt="Containers">
+                            <div class="card-body">
+                                <span class="badge custom-badge-4 mb-2">Layout</span>
+                                <h5 class="card-title">Container vs. Container-fluid Explained</h5>
+                                <p class="card-text text-muted small">A clear breakdown of fixed-width vs. full-width layouts and when to use each for optimal design flow.</p>
+                                <a href="#" class="btn custom-btn-outline btn-sm">Read More &rarr;</a>
+                            </div>
+                            <div class="card-footer custom-card-footer small">Posted: 1 month ago</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 custom-card-background rounded-3">
+                            <img src="https://placehold.co/400x180/4682B4/ffffff?text=Carousel+Modal" class="card-img-top card-img-top-custom" alt="Bootstrap Carousel and Modal">
+                            <div class="card-body">
+                                <span class="badge custom-badge-1 mb-2">JavaScript</span>
+                                <h5 class="card-title">Adding Interactivity: Carousel & Modals</h5>
+                                <p class="card-text text-muted small">How to easily integrate and initialize Bootstrap's powerful JavaScript components without writing custom JS.</p>
+                                <a href="#" class="btn custom-btn-outline btn-sm">Read More &rarr;</a>
+                            </div>
+                            <div class="card-footer custom-card-footer small">Posted: 6 days ago</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 custom-card-background rounded-3">
+                            <img src="https://placehold.co/400x180/8A2BE2/ffffff?text=SASS+Theming" class="card-img-top card-img-top-custom" alt="SASS Theming">
+                            <div class="card-body">
+                                <span class="badge custom-badge-2 mb-2">Workflow</span>
+                                <h5 class="card-title">Optimizing BS5 with SASS for Custom Themes</h5>
+                                <p class="card-text text-muted small">Go beyond the CDN! Learn how to customize Bootstrap's core variables using SASS for deep, consistent theming.</p>
+                                <a href="#" class="btn custom-btn-outline btn-sm">Read More &rarr;</a>
+                            </div>
+                            <div class="card-footer custom-card-footer small">Posted: 2 weeks ago</div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 custom-card-background rounded-3">
+                            <img src="https://placehold.co/400x180/008080/ffffff?text=Aria+Screen+Reader" class="card-img-top card-img-top-custom" alt="Accessibility">
+                            <div class="card-body">
+                                <span class="badge custom-badge-3 mb-2">Accessibility</span>
+                                <h5 class="card-title">Aria & Screen Readers: Making BS5 Inclusive</h5>
+                                <p class="card-text text-muted small">A crucial guide to ensuring your responsive components are fully accessible and meet WCAG guidelines.</p>
+                                <a href="#" class="btn custom-btn-outline btn-sm">Read More &rarr;</a>
+                            </div>
+                            <div class="card-footer custom-card-footer small">Posted: 3 weeks ago</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0 custom-card-background rounded-3">
+                            <img src="https://placehold.co/400x180/FF6347/ffffff?text=Icons" class="card-img-top card-img-top-custom" alt="Bootstrap Icons">
+                            <div class="card-body">
+                                <span class="badge custom-badge-4 mb-2">Best Practice</span>
+                                <h5 class="card-title">Using Icons Effectively: Integrating Bootstrap Icons</h5>
+                                <p class="card-text text-muted small">Best practices for choosing, styling, and implementing the new official Bootstrap Icon library in your projects.</p>
+                                <a href="#" class="btn custom-btn-outline btn-sm">Read More &rarr;</a>
+                            </div>
+                            <div class="card-footer custom-card-footer small">Posted: 1 month ago</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                
+                <div class="custom-sidebar-background rounded-3 shadow-sm custom-padding-4">
+                    <h4 class="custom-heading-color custom-border-bottom pb-2">Key Concepts</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="custom-sidebar-link">Mobile-First Workflow</a></li>
+                        <li><a href="#" class="custom-sidebar-link">SASS Customization</a></li>
+                        <li><a href="#" class="custom-sidebar-link">Utility-First Design</a></li>
+                        <li><a href="#" class="custom-sidebar-link">Grid Breakpoints</a></li>
+                        <li><a href="#" class="custom-sidebar-link">Flexbox Utilities</a></li>
+                        <li><a href="#" class="custom-sidebar-link">A11y (Accessibility) Principles</a></li>
+                    </ul>
+                </div>
+
+                <div class="custom-sidebar-background rounded-3 shadow-sm custom-padding-4 custom-margin-top-4">
+                    <h4 class="custom-heading-color custom-border-bottom pb-2">About the Internship Journey</h4>
+                    <p class="small text-muted mb-0">This blog is run by current and former web development interns. We share the hard-won lessons, common interview questions, and practical coding challenges that land you the job.</p>
+                </div>
+                
+                <div class="custom-sidebar-background rounded-3 shadow-sm custom-padding-4 custom-margin-top-4 text-center">
+                    <h5 class="custom-heading-color mb-3">Land Your First Dev Job.</h5>
+                    <p class="small text-muted mb-2">Subscribe to get a *free checklist* of "The Top 10 Bootstrap Components Interviewers Ask About."</p>
+                    <form>
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-control" placeholder="Your email address" aria-label="Email address">
+                        </div>
+                        <button class="btn w-100 btn-sm" style="background-color: var(--pastel-pink); color: var(--dark-text); font-weight: bold;">Subscribe Now</button>
+                    </form>
+                </div>
+            </div>
+
         </div>
-      </div>
     </div>
 
-  </div>
-</div>
+    <footer class="text-white custom-footer-background custom-padding-y-footer custom-margin-top-5">
+        <div class="container text-center">
+            <h5 class="mb-3">Connect With Us</h5>
+            <div class="social-icons mb-3">
+                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <p class="small custom-footer-text-muted mb-0">© 2024 Web Dev Insights, a division of FutureFront Developers Inc. Built with passion and Bootstrap 5.</p>
+        </div>
+    </footer>
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-4 mt-5">
-  <div class="container text-center">
-    <div class="mb-3">Follow us on</div>
-    <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-facebook"></i></a>
-    <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-twitter"></i></a>
-    <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-instagram"></i></a>
-    <a href="#" class="text-white mx-2 fs-4"><i class="bi bi-linkedin"></i></a>
-    <p class="mt-3 mb-0">&copy; 2025 TechInsights. All rights reserved.</p>
-  </div>
-</footer>
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
